@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Sound Cape Coral | Car Audio, Window Tinting, Key Fobs & More</title>
+  <meta name="description" content="Cape Coral's #1 rated auto electronics shop — 699 Google reviews, 4.5 stars. Car audio, window tinting, marine stereos, key fobs, dash cams, CarPlay, IID installs. Serving Cape Coral, Fort Myers, Lehigh Acres & SWFL. Mon-Sat 9-5. Call 239-542-8830.">
+  <meta name="keywords" content="car audio Cape Coral, window tinting Cape Coral, car stereo installation Fort Myers, marine audio Cape Coral, key fob replacement Cape Coral, dash cam install Fort Myers, CarPlay install Cape Coral, IID install Cape Coral, auto electronics SWFL, window tinting Fort Myers, car audio Lehigh Acres">
+  <link rel="canonical" href="https://autosoundcapecoral.com">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Auto Sound Cape Coral | #1 Rated Auto Electronics Shop (699 Reviews)">
+  <meta property="og:description" content="Car audio, window tinting, marine stereos, key fobs & more. 20+ years, 699 Google reviews. Cape Coral, Fort Myers & SWFL. Call 239-542-8830.">
+  <meta property="og:url" content="https://autosoundcapecoral.com">
+  <meta property="og:image" content="https://autosoundcapecoral.com/logo.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Auto Sound Cape Coral | #1 Rated Auto Electronics Shop">
+  <meta name="twitter:description" content="Car audio, window tinting, marine stereos, key fobs & more. 699 Google reviews. Call 239-542-8830.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #fafafa;
+      --border: #e5e5e5;
+      --border-light: #f0f0f0;
+      --text: #111111;
+      --text-secondary: #666666;
+      --text-muted: #999999;
+      --accent: #111111;
+      --accent-hover: #333333;
+      --yellow: #e8d44d;
+      --radius: 8px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-logo img {
+      height: 44px;
+      width: auto;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .header-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .header-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .header-links a:hover { color: var(--text); }
+    .header-cta {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .header-cta:hover { background: var(--accent-hover); }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--text);
+      margin: 5px 0;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .hero-cta:hover { background: var(--accent-hover); }
+    .hero-sub {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* FEATURES ROW */
+    .features {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .feature-item {
+      background: var(--bg);
+      padding: 24px;
+      text-align: center;
+      transition: background 0.15s;
+    }
+    .feature-item:hover { background: var(--bg-subtle); }
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .feature-item h3 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .feature-item p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* DIVIDER */
+    .divider {
+      max-width: 960px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* SERVICES */
+    .services {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .services-header {
+      margin-bottom: 32px;
+    }
+    .services-header h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .services-header p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .service-item {
+      background: var(--bg);
+      padding: 28px 24px;
+      transition: background 0.15s;
+      cursor: default;
+    }
+    .service-item:hover { background: var(--bg-subtle); }
+    .service-item h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .service-item p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .service-price {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 4px;
+    }
+
+    /* INFO SECTION */
+    .info-section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .info-block h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .info-block > p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-bottom: 24px;
+    }
+    .info-list {
+      list-style: none;
+    }
+    .info-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+    .info-list li:last-child { border-bottom: none; }
+    .info-label { color: var(--text-secondary); }
+    .info-value { font-weight: 600; text-align: right; }
+    .info-value a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .info-value a:hover { text-decoration: underline; }
+
+    /* REVIEWS */
+    .reviews {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .reviews-header {
+      margin-bottom: 32px;
+    }
+    .reviews-header h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .reviews-header p { color: var(--text-secondary); font-size: 0.92rem; }
+    .reviews-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .review-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .review-stars {
+      color: var(--yellow);
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .review-card blockquote {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 16px;
+      font-style: normal;
+    }
+    .review-author {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .review-source {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* FAQ */
+    .faq {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .faq-header {
+      margin-bottom: 32px;
+    }
+    .faq-header h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .faq-header p { color: var(--text-secondary); font-size: 0.92rem; }
+    .faq-list {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      width: 100%;
+      background: var(--bg);
+      border: none;
+      padding: 18px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: inherit;
+      transition: background 0.1s;
+    }
+    .faq-question:hover { background: var(--bg-subtle); }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+    }
+    .faq-item.active .faq-question::after { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer p {
+      padding: 0 20px 18px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    /* CTA BANNER */
+    .cta-banner {
+      max-width: 960px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+    }
+    .cta-banner-inner {
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .cta-banner h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .cta-banner p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+    }
+    .cta-banner a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--text);
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+    }
+    .cta-banner a:hover { opacity: 0.9; }
+
+    /* MAP */
+    .map {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      display: block;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+    }
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-logo img { height: 32px; }
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .footer-links a:hover { color: var(--text); }
+
+    /* MOBILE */
+    @media (max-width: 640px) {
+      .menu-toggle { display: block; }
+      .header-right {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        padding: 16px 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .header-right.open { display: flex; }
+      .header-links { flex-direction: column; gap: 8px; }
+      .header-cta { text-align: center; }
+      .hero h1 { font-size: 2rem; }
+      .hero { padding: 48px 24px 40px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-list { grid-template-columns: 1fr; }
+      .info-grid { grid-template-columns: 1fr; gap: 24px; }
+      .reviews-list { grid-template-columns: 1fr; }
+      .cta-banner-inner { padding: 36px 24px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+
+    /* STICKY CALL MOBILE */
+    .phone-sticky {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--accent);
+      padding: 12px 24px;
+      text-align: center;
+      z-index: 99;
+    }
+    .phone-sticky a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    @media (max-width: 640px) {
+      .phone-sticky { display: block; }
+      footer { padding-bottom: 64px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoPartsStore",
+    "name": "Auto Sound Cape Coral",
+    "description": "Cape Coral's #1 rated auto electronics shop. Car audio, window tinting, marine stereos, key fob repair, dash cams, CarPlay installs, and IID installs serving Cape Coral, Fort Myers, Lehigh Acres, North Fort Myers, and Southwest Florida.",
+    "url": "https://autosoundcapecoral.com",
+    "telephone": "+1-239-542-8830",
+    "email": "autosoundcapecoral@gmail.com",
+    "image": "https://autosoundcapecoral.com/logo.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "1118 Cape Coral Parkway East", "addressLocality": "Cape Coral", "addressRegion": "FL", "postalCode": "33904", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.5629, "longitude": -81.9495 },
+    "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00" }],
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "699",
+      "bestRating": "5"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cape Coral", "sameAs": "https://en.wikipedia.org/wiki/Cape_Coral,_Florida" },
+      { "@type": "City", "name": "Fort Myers" },
+      { "@type": "City", "name": "Lehigh Acres" },
+      { "@type": "City", "name": "North Fort Myers" },
+      { "@type": "City", "name": "Pine Island" },
+      { "@type": "City", "name": "Estero" },
+      { "@type": "City", "name": "Bonita Springs" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Auto Electronics Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Car Audio Installation", "description": "Custom stereo systems, speakers, subwoofers, amplifiers, and head units. Rockford Fosgate authorized dealer." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window Tinting", "description": "Premium ceramic and carbon window tint films for cars, trucks, and SUVs." }, "price": "149", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marine Audio Installation", "description": "Waterproof speakers, marine-grade amps, and Bluetooth head units for boats." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Key Fob Repair & Replacement", "description": "Key fob repair, replacement, battery swap, and programming for most makes and models." }, "price": "15", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dash Cam Installation", "description": "Front, rear, and dual-channel hardwired dash cam installation." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apple CarPlay & Android Auto Installation", "description": "Add Apple CarPlay or Android Auto to your vehicle with aftermarket head units." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backup Camera Installation", "description": "Professional backup camera installation with clean wiring and screen integration." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IID Installation", "description": "Certified ignition interlock device installation with calibration support." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LED Lighting", "description": "Interior accent lights, underbody kits, and LED headlight upgrades." } }
+      ]
+    },
+    "brand": [
+      { "@type": "Brand", "name": "Rockford Fosgate" },
+      { "@type": "Brand", "name": "JL Audio" },
+      { "@type": "Brand", "name": "Kenwood" },
+      { "@type": "Brand", "name": "Alpine" },
+      { "@type": "Brand", "name": "Wet Sounds" },
+      { "@type": "Brand", "name": "Fusion" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do I need an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Walk-ins are welcome Mon-Sat 9AM-5PM. For larger jobs like full audio builds, calling ahead helps us get it done same day." } },
+      { "@type": "Question", "name": "How long does a car stereo install take?", "acceptedAnswer": { "@type": "Answer", "text": "A basic head unit swap takes 1-2 hours. Full system builds with amps, subs, and speakers can take 4-8 hours. Most jobs are done same day." } },
+      { "@type": "Question", "name": "What window tint shades do you offer?", "acceptedAnswer": { "@type": "Answer", "text": "Everything from light to limo dark. We'll walk you through Florida's legal limits. Ceramic and carbon films available with lifetime warranty." } },
+      { "@type": "Question", "name": "Can you add CarPlay to my older car?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, yes. We install aftermarket head units with CarPlay and Android Auto for a wide range of vehicles." } },
+      { "@type": "Question", "name": "How much does key fob replacement cost?", "acceptedAnswer": { "@type": "Answer", "text": "Battery replacement $15. Repairs from $35. Full replacements from $100. Much cheaper than the dealership." } },
+      { "@type": "Question", "name": "Do you do marine audio?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marine-rated speakers, amps, subs, and head units designed for saltwater and sun. Wet Sounds, JL Audio Marine, and Fusion." } },
+      { "@type": "Question", "name": "What is an IID install?", "acceptedAnswer": { "@type": "Answer", "text": "An ignition interlock device required for certain DUI cases. We're a certified installer with quick, discreet installs and ongoing calibration." } },
+      { "@type": "Question", "name": "Do you offer warranties?", "acceptedAnswer": { "@type": "Answer", "text": "All installations come with a workmanship warranty. Many products include manufacturer warranties as well." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <img src="logo.jpg" alt="Auto Sound Cape Coral">
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('.header-right').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-right">
+        <ul class="header-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://keyfobfix.com">KeyFobFix.com</a></li>
+        </ul>
+        <a href="tel:2395428830" class="header-cta">Call 239-542-8830</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Cape Coral's #1 Rated Auto Electronics Shop</h1>
+    <p style="margin-bottom:12px;">Car audio, window tinting, marine stereos, key fobs, dash cams, and IID installs. Professional work at honest prices since 2004.</p>
+    <p style="font-size:0.95rem;font-weight:600;color:var(--text);margin:0 auto 12px;"><span style="color:var(--yellow);letter-spacing:2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 699 Google Reviews &middot; 4.5 Stars &middot; <a href="https://www.google.com/maps/place/Auto+Sound/@26.5629,-81.9495,17z/" target="_blank" rel="noopener" style="color:var(--text);text-decoration:underline;">Read Reviews</a></p>
+    <a href="tel:2395428830" class="hero-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Get a Free Quote
+    </a>
+    <div class="hero-sub">Walk-ins welcome &middot; Mon-Sat 9AM-5PM &middot; 1118 Cape Coral Pkwy E &middot; Serving Fort Myers, Lehigh Acres &amp; all of SWFL</div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">&#127925;</div>
+        <h3>Car Audio</h3>
+        <p>Stereos, subs, amps</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#9728;&#65039;</div>
+        <h3>Window Tinting</h3>
+        <p>Ceramic &amp; carbon films</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#9875;</div>
+        <h3>Marine Audio</h3>
+        <p>Waterproof systems</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128273;</div>
+        <h3>Key Fobs</h3>
+        <p>Repair &amp; replacement</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128249;</div>
+        <h3>Dash Cams</h3>
+        <p>Hardwired installs</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128274;</div>
+        <h3>IID Installs</h3>
+        <p>Certified provider</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SERVICES -->
+  <div class="services" id="services">
+    <div class="services-header">
+      <h2>Services &amp; Pricing</h2>
+      <p>Professional installation on everything we sell. Free quotes, no hidden fees.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-item">
+        <h3>Car Audio</h3>
+        <p>Custom stereo systems, speakers, subwoofers, amplifiers, and head units. Rockford Fosgate authorized dealer.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+      <div class="service-item">
+        <h3>Window Tinting</h3>
+        <p>Premium ceramic and carbon tint films. Beat the Florida heat, protect your interior, add privacy.</p>
+        <span class="service-price">From $149</span>
+      </div>
+      <div class="service-item">
+        <h3>Marine Audio</h3>
+        <p>Waterproof speakers, marine-grade amps, and Bluetooth head units built for salt, sun, and spray.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+      <div class="service-item">
+        <h3>Key Fobs</h3>
+        <p>Repair, replacement, battery swap, and programming for most makes and models. Same-day service.</p>
+        <span class="service-price">From $15</span>
+      </div>
+      <div class="service-item">
+        <h3>Dash Cams</h3>
+        <p>Front, rear, and dual-channel installation. Hardwired for clean look and parking mode protection.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+      <div class="service-item">
+        <h3>CarPlay / Android Auto</h3>
+        <p>Add Apple CarPlay or Android Auto to your vehicle. Navigation, music, calls on your dash.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+      <div class="service-item">
+        <h3>Backup Cameras</h3>
+        <p>Professional installation with clean wiring and seamless integration to your screen or mirror.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+      <div class="service-item">
+        <h3>IID Installs</h3>
+        <p>Certified ignition interlock device installation. Quick installs, discreet placement, calibration support.</p>
+        <span class="service-price">Call for Details</span>
+      </div>
+      <div class="service-item">
+        <h3>LED Lighting</h3>
+        <p>Interior accent lights, underbody kits, LED headlight upgrades. Make your ride stand out.</p>
+        <span class="service-price">Call for Quote</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- INFO -->
+  <div class="info-section" id="contact">
+    <div class="info-grid">
+      <div class="info-block">
+        <h2>Visit the Shop</h2>
+        <p>Walk-ins welcome. No appointment needed for most services.</p>
+        <ul class="info-list">
+          <li><span class="info-label">Address</span><span class="info-value">1118 Cape Coral Pkwy E</span></li>
+          <li><span class="info-label">City</span><span class="info-value">Cape Coral, FL 33904</span></li>
+          <li><span class="info-label">Phone</span><span class="info-value"><a href="tel:2395428830">239-542-8830</a></span></li>
+          <li><span class="info-label">Email</span><span class="info-value"><a href="mailto:autosoundcapecoral@gmail.com">autosoundcapecoral@gmail.com</a></span></li>
+          <li><span class="info-label">Hours</span><span class="info-value">Mon-Sat 9AM - 5PM</span></li>
+          <li><span class="info-label">Sunday</span><span class="info-value">Closed</span></li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <h2>Why 699 Customers Chose Us</h2>
+        <p>More reviews than any auto electronics shop in Lee County.</p>
+        <ul class="info-list">
+          <li><span class="info-label">Google Rating</span><span class="info-value"><span style="color:var(--yellow);">&#9733;</span> 4.5 / 5 (699 reviews)</span></li>
+          <li><span class="info-label">Experience</span><span class="info-value">20+ Years in Cape Coral</span></li>
+          <li><span class="info-label">Turnaround</span><span class="info-value">Most Jobs Same Day</span></li>
+          <li><span class="info-label">Authorized Dealer</span><span class="info-value">Rockford Fosgate, JL Audio, Kenwood, Alpine, Wet Sounds</span></li>
+          <li><span class="info-label">Warranty</span><span class="info-value">Every Install Backed</span></li>
+          <li><span class="info-label">Pricing</span><span class="info-value">Free Quotes, No Hidden Fees</span></li>
+          <li><span class="info-label">Walk-ins</span><span class="info-value">Welcome 6 Days/Week</span></li>
+          <li><span class="info-label">Serving</span><span class="info-value">Cape Coral, Fort Myers, Lehigh Acres, North Fort Myers &amp; SWFL</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- REVIEWS -->
+  <div class="reviews" id="reviews">
+    <div class="reviews-header">
+      <h2>699 Google Reviews &amp; Counting</h2>
+      <p>What Cape Coral, Fort Myers, and SWFL drivers are saying. <a href="https://www.google.com/maps/place/Auto+Sound/@26.5629,-81.9495,17z/" target="_blank" rel="noopener" style="color:var(--text);font-weight:600;text-decoration:underline;">See all reviews on Google</a></p>
+    </div>
+    <div class="reviews-list">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Got my windows tinted and a new head unit with CarPlay. The work was clean and the price was way better than I expected. Will definitely be back.</blockquote>
+        <div class="review-author">Mike R.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Key fob stopped working on my Honda. Dealer wanted $300+. These guys fixed it for a fraction of that. Same day, no appointment needed.</blockquote>
+        <div class="review-author">Sarah T.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Had a full system put in my truck. Rockford Fosgate amp and subs. Sounds incredible and the install is super clean. Highly recommend.</blockquote>
+        <div class="review-author">James D.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FAQ -->
+  <div class="faq" id="faq">
+    <div class="faq-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Can't find your answer? <a href="tel:2395428830" style="color:var(--text);font-weight:600;">Call 239-542-8830</a></p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Do I need an appointment?</button>
+        <div class="faq-answer"><p>Walk-ins are welcome Mon-Sat 9AM-5PM. For larger jobs like full audio builds, calling ahead helps us get it done same day.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How long does a car stereo install take?</button>
+        <div class="faq-answer"><p>A basic head unit swap takes 1-2 hours. Full system builds with amps, subs, and speakers can take 4-8 hours. Most jobs are done same day.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What window tint shades do you offer?</button>
+        <div class="faq-answer"><p>Everything from light to limo dark. We'll walk you through Florida's legal limits. Ceramic and carbon films available with lifetime warranty.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can you add CarPlay to my older car?</button>
+        <div class="faq-answer"><p>In most cases, yes. We install aftermarket head units with CarPlay and Android Auto for a wide range of vehicles. Call with your year, make, and model.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How much does key fob replacement cost?</button>
+        <div class="faq-answer"><p>Battery replacement $15. Repairs from $35. Full replacements from $100. Much cheaper than the dealership.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you do marine audio?</button>
+        <div class="faq-answer"><p>Yes. Marine-rated speakers, amps, subs, and head units designed for saltwater and sun. Wet Sounds, JL Audio Marine, and Fusion.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is an IID install?</button>
+        <div class="faq-answer"><p>An ignition interlock device required for certain DUI cases. We're a certified installer with quick, discreet installs and ongoing calibration.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you offer warranties?</button>
+        <div class="faq-answer"><p>All installations come with a workmanship warranty. Many products include manufacturer warranties as well.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2>Ready to upgrade your ride?</h2>
+      <p>Call now for a free quote. Walk-ins welcome Monday through Saturday.</p>
+      <a href="tel:2395428830">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 239-542-8830
+      </a>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.1!2d-81.9495!3d26.5629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1118+Cape+Coral+Pkwy+E%2C+Cape+Coral%2C+FL+33904!5e0!3m2!1sen!2sus!4v1"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Auto Sound Cape Coral location"></iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <img src="logo.jpg" alt="Auto Sound Cape Coral">
+      </a>
+      <span class="footer-text">Professional auto electronics &amp; installation serving Cape Coral, Fort Myers, Lehigh Acres, North Fort Myers, Pine Island, Estero &amp; Bonita Springs, FL</span>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://keyfobfix.com">KeyFobFix.com</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=41568792322" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- STICKY CALL MOBILE -->
+  <div class="phone-sticky">
+    <a href="tel:2395428830">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now &mdash; 239-542-8830
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.header-right').classList.toggle('open');
+    });
+    document.querySelectorAll('.header-links a, .header-cta').forEach(a => {
+      a.addEventListener('click', () => document.querySelector('.header-right').classList.remove('open'));
+    });
+  </script>
+
+</body>
+</html>
