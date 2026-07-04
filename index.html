@@ -546,7 +546,8 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AutoPartsStore",
+    "@type": "AutomotiveBusiness",
+    "@id": "https://autosoundcapecoral.com/#business",
     "name": "Auto Sound Cape Coral",
     "description": "Cape Coral's #1 rated auto electronics shop. Car audio, window tinting, marine stereos, key fob repair, dash cams, CarPlay installs, and IID installs serving Cape Coral, Fort Myers, Lehigh Acres, North Fort Myers, and Southwest Florida.",
     "url": "https://autosoundcapecoral.com",
@@ -557,12 +558,6 @@
     "geo": { "@type": "GeoCoordinates", "latitude": 26.5629, "longitude": -81.9495 },
     "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00" }],
     "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "699",
-      "bestRating": "5"
-    },
     "areaServed": [
       { "@type": "City", "name": "Cape Coral", "sameAs": "https://en.wikipedia.org/wiki/Cape_Coral,_Florida" },
       { "@type": "City", "name": "Fort Myers" },
@@ -570,6 +565,7 @@
       { "@type": "City", "name": "North Fort Myers" },
       { "@type": "City", "name": "Pine Island" },
       { "@type": "City", "name": "Estero" },
+      { "@type": "City", "name": "Punta Gorda" },
       { "@type": "City", "name": "Bonita Springs" }
     ],
     "hasOfferCatalog": {
@@ -920,5 +916,22 @@
     });
   </script>
 
+
+<script>
+(function () {
+  function getParam(n){var m=new RegExp('[?&]'+n+'=([^&]+)').exec(location.search);return m?decodeURIComponent(m[1]):null;}
+  function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/';}
+  function getCookie(n){var m=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return m?m.pop():null;}
+  var g=getParam('gclid'); if(g) setCookie('gclid',g,90);
+  var stored=getCookie('gclid');
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('form').forEach(function(f){
+      if(stored && !f.querySelector('input[name="gclid"]')){
+        var i=document.createElement('input');i.type='hidden';i.name='gclid';i.value=stored;f.appendChild(i);
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
