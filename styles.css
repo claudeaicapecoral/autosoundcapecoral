@@ -185,7 +185,7 @@ a.service-item .service-more { font-size: 0.78rem; font-weight: 600; color: var(
 /* FOOTER */
 footer { border-top: 1px solid var(--border); padding: 32px 24px; }
 .footer-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-.footer-logo img { height: 32px; }
+.footer-logo img { height: 44px; width: auto; max-width: 100%; }
 .footer-text { font-size: 0.8rem; color: var(--text-muted); }
 .footer-links { display: flex; gap: 20px; list-style: none; flex-wrap: wrap; }
 .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.8rem; }
