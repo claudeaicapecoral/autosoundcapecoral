@@ -1,3 +1,65 @@
+// ChatGPT Ads measurement: page views plus the two actions that start conversations.
+(function () {
+  if (!window.oaiq) {
+    var queue = function () { queue.q.push(arguments); };
+    queue.q = [];
+    window.oaiq = queue;
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://bzrcdn.openai.com/sdk/oaiq.min.js';
+    var firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+  }
+
+  oaiq('init', {
+    pixelId: 'BSnFVzsCogadV9kBi1hDGz',
+    debug: true
+  });
+
+  var pageId = window.location.pathname === '/' ? 'home' : window.location.pathname
+    .replace(/^\//, '')
+    .replace(/\.html$/, '')
+    .replace(/[^a-zA-Z0-9_-]+/g, '_');
+
+  oaiq('measure', 'page_viewed', {
+    type: 'contents',
+    contents: [{
+      id: pageId,
+      name: document.title || pageId,
+      content_type: 'page'
+    }]
+  });
+
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    var link = target && target.closest ? target.closest('a[href]') : null;
+    if (!link) return;
+
+    var href = link.getAttribute('href') || '';
+    var eventName = href.indexOf('tel:') === 0
+      ? 'call_clicked'
+      : href.indexOf('sms:') === 0
+        ? 'text_clicked'
+        : null;
+    if (!eventName) return;
+
+    oaiq(
+      'measure',
+      'custom',
+      {
+        type: 'custom',
+        contents: [{
+          id: pageId,
+          name: document.title || pageId,
+          content_type: 'contact_action'
+        }]
+      },
+      { custom_event_name: eventName }
+    );
+  }, true);
+})();
+
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
