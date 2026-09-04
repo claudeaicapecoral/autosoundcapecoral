@@ -215,10 +215,11 @@ footer { border-top: 1px solid var(--border); padding: 32px 24px; }
   .page-hero h1 { font-size: 2rem; }
 }
 
-/* STICKY CALL MOBILE */
-.phone-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--accent); padding: 12px 24px; text-align: center; z-index: 99; }
-.phone-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
-@media (max-width: 640px) { .phone-sticky { display: block; } footer { padding-bottom: 64px; } }
+/* STICKY TEXT / CALL MOBILE */
+.phone-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--accent); padding: 10px 16px; text-align: center; z-index: 99; gap: 8px; }
+.phone-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; min-height: 44px; border: 1px solid #fff; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; gap: 6px; }
+.phone-sticky a:first-child { background: var(--yellow); border-color: var(--yellow); color: var(--text); }
+@media (max-width: 640px) { .phone-sticky { display: grid; grid-template-columns: 1fr 1fr; } footer { padding-bottom: 74px; } }
 
 /* =========================================================
    CONTENT / SERVICE PAGES
