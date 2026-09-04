@@ -14,7 +14,7 @@
 
   oaiq('init', {
     pixelId: 'BSnFVzsCogadV9kBi1hDGz',
-    debug: true
+    debug: false
   });
 
   var pageId = window.location.pathname === '/' ? 'home' : window.location.pathname
