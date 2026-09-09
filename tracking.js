@@ -1,4 +1,4 @@
-// ChatGPT Ads measurement: page views plus the two actions that start conversations.
+// Site measurement: page views plus the actions that start customer conversations.
 (function () {
   if (!window.oaiq) {
     var queue = function () { queue.q.push(arguments); };
@@ -38,9 +38,9 @@
 
     var href = link.getAttribute('href') || '';
     var eventName = href.indexOf('tel:') === 0
-      ? 'call_clicked'
+      ? 'phone_click'
       : href.indexOf('sms:') === 0
-        ? 'text_clicked'
+        ? 'text_click'
         : null;
     if (!eventName) return;
 
@@ -57,14 +57,25 @@
       },
       { custom_event_name: eventName }
     );
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, {
+        send_to: 'G-BZKXYHS095',
+        link_url: href,
+        page_path: window.location.pathname,
+        page_title: document.title
+      });
+    }
   }, true);
 })();
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
 gtag('js', new Date());
+gtag('config', 'G-BZKXYHS095');
 gtag('config', 'AW-18033973772');
-(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=AW-18033973772';document.head.appendChild(s);})();
+(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-BZKXYHS095';document.head.appendChild(s);})();
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '341702038742463');
 fbq('track', 'PageView');
