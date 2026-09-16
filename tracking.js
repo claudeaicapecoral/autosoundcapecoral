@@ -66,6 +66,18 @@
         page_title: document.title
       });
     }
+
+    if (
+      eventName === 'text_click' &&
+      href.replace(/\D/g, '').slice(-10) === '2395428830' &&
+      typeof window.fbq === 'function'
+    ) {
+      window.fbq('track', 'Contact', {
+        contact_method: 'sms',
+        destination: '2395428830',
+        page_path: window.location.pathname
+      });
+    }
   }, true);
 })();
 
