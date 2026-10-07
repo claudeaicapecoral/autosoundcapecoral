@@ -55,7 +55,7 @@
           content_type: 'contact_action'
         }]
       },
-      { custom_event_name: eventName }
+      { custom_event_name: eventName === 'phone_click' ? 'call_clicked' : 'text_clicked' }
     );
 
     if (typeof window.gtag === 'function') {
